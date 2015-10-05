@@ -66,4 +66,9 @@ myApp.controller("MainController", ['$scope', '$http', function($scope, $http){
         $scope.cartOpen = false;
     };
 
+    $scope.removeVeg = function(item){
+        console.log(item);
+        var item = 0;
+    };
+
 }]);

@@ -14,6 +14,29 @@ ul {
     height: 150px;
 }
 
+.jumbotron {
+    height: 200px;
+    position: relative;
+    background: none;
+    padding-left: 60px;
+    margin-bottom: 5px;
+    font-weight: 200;
+    line-height: 3.1428571435;
+
+}
+.jumbotron:after {
+    content:"";
+    background: url("../views/images/veggies.png");
+    background-size: 25%;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 input[type=number]{
     width: 50px;
 }
