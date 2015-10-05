@@ -1,0 +1,32 @@
+{
+  "asparagus": {
+    "name": "Asparagus",
+    "price": 3.50,
+    "description": "Tender and delicious. Try on the grill for even more flavor."
+  },
+  "broccoli": {
+    "name": "Broccoli",
+    "price": 2.00,
+    "description": "Incredibly fresh and tasty. Makes the perfect pizza topping!"
+  },
+  "carrot": {
+    "name": "Carrot",
+    "price": 1.00,
+    "description": "Perfect amount of sweet and crunchy. Great for dipping in peanut butter."
+  },
+  "kale": {
+    "name": "Kale",
+    "price": 3.00,
+    "description": "Spice up your salad with this tasty green. Also good as a stir fry ingredient."
+  },
+  "lettuce": {
+    "name": "Lettuce",
+    "price": 1.50,
+    "description": "Basic iceberg lettuce to create a basic salad."
+  },
+  "pepper": {
+    "name": "Pepper",
+    "price": 1.75,
+    "description": "Add a little kick to your meal! Terrific bell pepper."
+  }
+}

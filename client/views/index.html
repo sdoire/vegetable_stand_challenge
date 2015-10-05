@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="vegetableApp">
+<head>
+    <meta charset="UTF-8">
+    <title>CH Robinson Take Home Test</title>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+</head>
+<body ng-controller="MainController">
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Vegetable Stand</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <ul class="well col-md-4 item" ng-repeat="vegetable in vegetables">
+                    <li id="name">{{vegetable.name}}</li>
+                    <li>{{vegetable.price | currency}}</li>
+                    <li>{{vegetable.description}}</li>
+                    <button ng-click="buyFruit()" class="btn btn-success btn-sm">Purchase Item</button>
+                </ul>
+            </div>
+
+            <div class="col-md-4 well">
+                <h3>Shopping cart</h3>
+                <p>Total Cost: {{totalCost | currency}}</p>
+                <button ng-if="!cartOpen" ng-click="openCart()" class="btn btn-warning">View Cart</button>
+                <button ng-if="cartOpen" ng-click="closeCart()" class="btn btn-warning">Hide Cart</button>
+
+                <ul ng-if="cartOpen">
+                    <li ng-if="cart.numAsparagus > 0">Asparagus: <input ng-change="getTotalCost()" ng-model="cart.numAsparagus" type="number" name="quantity"></li>
+                    <li ng-if="cart.numBroccoli > 0">Broccoli: <input ng-change="getTotalCost()" ng-model="cart.numBroccoli" type="number" name="quantity"></li>
+                    <li ng-if="cart.numCarrot > 0">Carrots: <input ng-change="getTotalCost()" ng-model="cart.numCarrot" type="number" name="quantity"></li>
+                    <li ng-if="cart.numKale > 0">Kale: <input ng-change="getTotalCost()" ng-model="cart.numKale" type="number" name="quantity"></li>
+                    <li ng-if="cart.numLettuce > 0">Lettuce: <input ng-change="getTotalCost()" ng-model="cart.numLettuce" type="number" name="quantity"></li>
+                    <li ng-if="cart.numPepper > 0">Peppers: <input ng-change="getTotalCost()" ng-model="cart.numPepper" type="number" name="quantity"></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
