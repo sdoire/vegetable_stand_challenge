@@ -37,12 +37,12 @@
                 <button ng-if="cartOpen" ng-click="closeCart()" class="btn btn-warning">Hide Cart</button>
 
                 <ul ng-if="cartOpen">
-                    <li ng-if="cart.numAsparagus > 0">Asparagus: <input ng-change="getTotalCost()" ng-model="cart.numAsparagus" type="number" name="quantity"><button ng-click="cart.numAsparagus=0" class="btn btn-danger">Remove this vegetable</button></li>
-                    <li ng-if="cart.numBroccoli > 0">Broccoli: <input ng-change="getTotalCost()" ng-model="cart.numBroccoli" type="number" name="quantity"><button ng-click="cart.numBroccoli=0" class="btn btn-danger">Remove this vegetable</button></li>
-                    <li ng-if="cart.numCarrot > 0">Carrots: <input ng-change="getTotalCost()" ng-model="cart.numCarrot" type="number" name="quantity"><button ng-click="cart.numCarrot=0" class="btn btn-danger">Remove this vegetable</button></li>
-                    <li ng-if="cart.numKale > 0">Kale: <input ng-change="getTotalCost()" ng-model="cart.numKale" type="number" name="quantity"><button ng-click="cart.numKale=0" class="btn btn-danger">Remove this vegetable</button></li>
-                    <li ng-if="cart.numLettuce > 0">Lettuce: <input ng-change="getTotalCost()" ng-model="cart.numLettuce" type="number" name="quantity"><button ng-click="cart.numLettuce=0" class="btn btn-danger">Remove this vegetable</button></li>
-                    <li ng-if="cart.numPepper > 0">Peppers: <input ng-change="getTotalCost()" ng-model="cart.numPepper" type="number" name="quantity"><button ng-click="cart.numPepper=0" class="btn btn-danger">Remove this vegetable</button></li>
+                    <li ng-if="cart.numAsparagus > 0">Asparagus: <input ng-change="getTotalCost()" ng-model="cart.numAsparagus" type="number" name="quantity"><button ng-click="cart.numAsparagus=0; getTotalCost()" class="btn btn-danger">Remove this vegetable</button></li>
+                    <li ng-if="cart.numBroccoli > 0">Broccoli: <input ng-change="getTotalCost()" ng-model="cart.numBroccoli" type="number" name="quantity"><button ng-click="cart.numBroccoli=0; getTotalCost()" class="btn btn-danger">Remove this vegetable</button></li>
+                    <li ng-if="cart.numCarrot > 0">Carrots: <input ng-change="getTotalCost()" ng-model="cart.numCarrot" type="number" name="quantity"><button ng-click="cart.numCarrot=0; getTotalCost()" class="btn btn-danger">Remove this vegetable</button></li>
+                    <li ng-if="cart.numKale > 0">Kale: <input ng-change="getTotalCost()" ng-model="cart.numKale" type="number" name="quantity"><button ng-click="cart.numKale=0; getTotalCost()" class="btn btn-danger">Remove this vegetable</button></li>
+                    <li ng-if="cart.numLettuce > 0">Lettuce: <input ng-change="getTotalCost()" ng-model="cart.numLettuce" type="number" name="quantity"><button ng-click="cart.numLettuce=0; getTotalCost()" class="btn btn-danger">Remove this vegetable</button></li>
+                    <li ng-if="cart.numPepper > 0">Peppers: <input ng-change="getTotalCost()" ng-model="cart.numPepper" type="number" name="quantity"><button ng-click="cart.numPepper=0; getTotalCost()" class="btn btn-danger">Remove this vegetable</button></li>
                 </ul>
             </div>
 
